@@ -2,17 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>TechNova Solutions - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions | Innovación e Infraestructura</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        .hero { background-color: #f4f4f4; padding: 50px; border-radius: 10px; display: inline-block;}
+        /* Estilos base (Reset) */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+        
+        /* Navegación */
+        header { background-color: #0A2540; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        header .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        header .logo span { color: #635BFF; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #635BFF; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #0A2540 0%, #1A365D 100%); color: white; padding: 80px 5%; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px auto; color: #c0cde0; }
+        .btn { background-color: #635BFF; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background-color: #4b44cc; }
+
+        /* Servicios */
+        .services { padding: 60px 5%; text-align: center; }
+        .services h2 { font-size: 2rem; margin-bottom: 40px; color: #0A2540; }
+        .grid { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); width: 300px; text-align: left; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: #0A2540; margin-bottom: 15px; }
+        .card p { color: #666; font-size: 0.95rem; }
+
+        /* Footer */
+        footer { background-color: #0A2540; color: white; text-align: center; padding: 20px 0; margin-top: 40px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Bienvenido a TechNova Solutions</h1>
-        <p>Innovación en la nube e infraestructura de red.</p>
-        <p>Nuestro sitio está en construcción, pero estamos seguros.</p>
-    </div>
+
+    <header>
+        <div class="logo">TechNova <span>Solutions</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#">Casos de Éxito</a></li>
+                <li><a href="#">Portal de Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Arquitectura en la Nube de Siguiente Nivel</h1>
+        <p>Optimizamos tu infraestructura tecnológica. Desde migraciones ágiles hasta auditorías de ciberseguridad corporativa.</p>
+        <a href="#" class="btn">Solicitar Consultoría</a>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestras Especialidades</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>☁️ Migración Cloud</h3>
+                <p>Diseñamos e implementamos arquitecturas escalables y resilientes, garantizando alta disponibilidad y optimización de costos en tu infraestructura de servidores.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Auditoría de Seguridad</h3>
+                <p>Realizamos pruebas de penetración y análisis de vulnerabilidades para asegurar que tus datos y los de tus clientes estén protegidos contra amenazas externas.</p>
+            </div>
+            <div class="card">
+                <h3>⚙️ Desarrollo Full-Stack</h3>
+                <p>Construimos aplicaciones web robustas bajo el modelo MVC, asegurando integraciones seguras de bases de datos y rendimiento óptimo.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TechNova Solutions. Todos los derechos reservados.</p>
+        <p>Políticas de Privacidad | Términos de Servicio</p>
+    </footer>
+
 </body>
 </html>

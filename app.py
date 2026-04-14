@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-# Ruta principal (El sitio que se ve "normal")
+# Ruta principal
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -26,5 +26,4 @@ def download_file(filename):
     return send_from_directory(os.path.join(app.root_path, 'static', 'uploads'), filename)
 
 if __name__ == '__main__':
-    # Escucha en todas las interfaces para que tus compañeros puedan acceder
     app.run(host='0.0.0.0', port=5000, debug=True)
